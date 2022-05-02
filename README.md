@@ -45,9 +45,6 @@ Here is how each model performed:
 ![results 6](images/results6.png)
 
 ## Summary
+All the models suffered with very low precision. One can look at the accuracy scores and see better numbers with the Random Forest (79%) and AdaBoost algorithms (93%), but its precisions are still only 3%. It would be difficult to recommend any of these models for a bank to use in predicting credit risk. We end up with too many false positives. If the bank were to solely rely on the algorithm to approve or deny credit, then there would be too many low-risk customers with denied credit.
 
-There is a bulleted list that describes the balanced accuracy score and the precision and recall scores of all six machine learning models (15 pt)
-Summary:
-
-There is a summary of the results (2 pt)
-There is a recommendation on which model to use, or there is no recommendation with a justification (3 pt)
+Based on additional calculations, the bank could make a decision that it is in their best interest to deny these customers credit according to a low-accuracy model due to the losses for those high-risk credit individuals outweighing the benefit of the gains of the missed customers. In that case, it could also introduce controversial discussions around denying such high numbers of low-risk customers.
